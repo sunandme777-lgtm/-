@@ -1,0 +1,29 @@
+name: Johnbrick deterministic data sync
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/johnbrick-sync.yml'
+      - 'johnbrick-public/publish.py'
+      - 'johnbrick-public/sync_source.py'
+      - 'johnbrick-public/prepare_data.py'
+permissions:
+  contents: write
+concurrency:
+  group: johnbrick-public-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Verify source and publish changed public snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python johnbrick-public/publish.py
