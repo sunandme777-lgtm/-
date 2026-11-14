@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "fingerprint": "d63efccbe09438c5b49eac1da47c12973239cb876128fb2819684e0ff86566be",
-  "manifest_url": "https://github.com/sunandme777-lgtm/-/releases/download/johnbrick-current/manifest-d63efccbe09438c5b49eac1d.json",
-  "manifest_sha256": "1fe16bcf77f6bba1d8d65cf82db49ff40593261d3f8847e1992d37cb98ddd5b3",
+  "fingerprint": "e95cfcec1478ca360a9c1ebe85efb984d25e385a0b865b77312fe73d57e5c095",
+  "manifest_url": "https://github.com/sunandme777-lgtm/-/releases/download/johnbrick-current/manifest-e95cfcec1478ca360a9c1ebe.json",
+  "manifest_sha256": "6fd38cfc306a58d7b601c544e9eb25470fad093515d2194edd28e62e01290057",
   "manifest_size": 86195,
-  "price_last_date": "2026-11-11",
-  "price_rows": 12303422
+  "price_last_date": "2026-11-12",
+  "price_rows": 12304208
 }
